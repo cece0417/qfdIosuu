@@ -61,12 +61,21 @@ public class SampleTest extends BaseTest{
             ResultGenerator.loadPageFail(characterpage);
         }
 
+        //预约课程
+
+        myclassPage myclasspage = new myclassPage("myclassPage");
+        myclasspage.setDriver(driver);
+
+        if (myclasspage.hasPageShown(myclassPageUI.appointment)){
+            saveScreen(myclasspage.pageDesc);
+            ResultGenerator.loadPageSucc(myclasspage);
+
+            myclasspage.onclickAppointment();
+        }else{
+            ResultGenerator.loadPageFail(myclasspage);
+        }
 
     }
 
-    //预约课程
-
-    myclassPage myclasspage = new myclassPage("myclassPage");
-    myclasspage.s
 
 }

@@ -1,13 +1,13 @@
 package autoui.pages;
 
-import macaca.java.biz.BaseMacacaClient;
-import macaca.java.biz.BasePage;
+
 import autoui.pageuis.myclassPageUI;
+import macaca.java.biz.BasePage;
 
 /**
  * Created by caixiaoxue on 2017/3/2.
  */
-public class myclassPage extends BasePage{
+public class myclassPage extends BasePage {
 
 
     public myclassPage(String pageDesc){

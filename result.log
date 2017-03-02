@@ -1,6 +1,8 @@
-2017-02-27 11:58:28,login page|true|页面加载成功
-2017-02-27 11:58:32,输入: username;value:13631153598|true|
-2017-02-27 11:58:36,输入: password;value:123123|true|
-2017-02-27 11:58:40,点击:login|true|
-2017-02-27 11:58:44,choose character|true|页面加载成功
-2017-02-27 11:58:51,点击:target|true|
+2017-03-02 15:53:26,login page|true|页面加载成功
+2017-03-02 15:53:30,输入: username;value:13631153598|true|
+2017-03-02 15:53:34,输入: password;value:123123|true|
+2017-03-02 15:53:38,点击:login|true|
+2017-03-02 15:53:42,choose character|true|页面加载成功
+2017-03-02 15:53:49,点击:target|true|
+2017-03-02 15:53:58,myclassPage|true|页面加载成功
+2017-03-02 15:54:05,点击:appointment|true|
