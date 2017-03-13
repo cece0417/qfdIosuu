@@ -1,8 +1,10 @@
 package autoui.cases;
 
 import autoui.pages.LoginPage;
+import autoui.pages.appointmentPage;
 import autoui.pages.characterPage;
 import autoui.pageuis.LoginPageUI;
+import autoui.pageuis.appointmentPageUI;
 import autoui.pageuis.characterPageUI;
 import macaca.java.biz.ResultGenerator;
 import autoui.pageuis.myclassPageUI;
@@ -21,7 +23,7 @@ public class SampleTest extends BaseTest{
     public void test() throws Exception{
 
     //测试登录
-    LoginPage loginPage = new LoginPage("login page");
+   /* LoginPage loginPage = new LoginPage("login page");
     loginPage.setDriver(driver);
         sleep(5000);
     if(loginPage.hasPageShown(LoginPageUI.LOGIN)){
@@ -31,7 +33,7 @@ public class SampleTest extends BaseTest{
         ResultGenerator.loadPageSucc(loginPage);
 
 
-        loginPage.login("13631153598","123123");
+      loginPage.login("13631153598","123123");
     }else{
         ResultGenerator.loadPageFail(loginPage);
     }
@@ -59,7 +61,7 @@ public class SampleTest extends BaseTest{
             //characterpage.onclickOneCell(4);
         }else{
             ResultGenerator.loadPageFail(characterpage);
-        }
+        }*/
 
         //预约课程
 
@@ -74,6 +76,22 @@ public class SampleTest extends BaseTest{
         }else{
             ResultGenerator.loadPageFail(myclasspage);
         }
+
+        appointmentPage appointmentpage = new appointmentPage("appointmentpage");
+        appointmentpage.setDriver(driver);
+
+        if(appointmentpage.hasPageShown(appointmentPageUI.appointByn)){
+            saveScreen(appointmentpage.pageDesc);
+            ResultGenerator.loadPageSucc(appointmentpage);
+
+            appointmentpage.appointment("cece","13631153598");
+        }else {
+            ResultGenerator.loadPageFail(myclasspage);
+        }
+
+
+
+
 
     }
 
